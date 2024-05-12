@@ -1,0 +1,39 @@
+.home-page-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .name {
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+
+  .title {
+    margin-top: 10px;
+    color: #bbb;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    .desc {
+      color: #149ddd;
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  @media only screen and (min-device-width: 200px) and (max-device-width: 700px) {
+    .home-page-background {
+      .name {
+        font-size: 2rem;
+      }
+
+      .title {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

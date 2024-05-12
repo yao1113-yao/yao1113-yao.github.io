@@ -1,0 +1,204 @@
+.about-container {
+  padding: 60px;
+  min-height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  .title {
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    span {
+      color: #f58545;
+    }
+  }
+
+  .desc-me-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #bbb;
+    margin-bottom: 50px;
+
+    .desc-me {
+      width: 45%;
+    }
+    .details-container {
+      width: 45%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      text-align: start;
+      gap: 10px;
+
+      .details {
+        width: 100%;
+        text-align: start;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        font-size: 0.9rem;
+        gap: 10px;
+
+        .details-title {
+          font-weight: 600;
+          color: #f58545;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 30%;
+        }
+
+        .details-answer {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          color: #bbb;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .skills-container {
+    .sub-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #f58545;
+    }
+
+    .skill-details-container {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      .skill-details {
+        width: 48%;
+        height: 100%;
+        .skill-title {
+          color: #bbb;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          height: 100%;
+          .percentage {
+            font-size: 0.8rem;
+            text-align: end;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: end;
+          }
+        }
+        .skill-progress {
+          width: 100%;
+          border: 1px solid #f58545;
+          height: 5px;
+          border-radius: 10px;
+          margin-top: 10px;
+
+          .skill-percentage {
+            border-radius: 10px;
+            height: 5px;
+            padding: 0;
+            background-color: #f58545;
+          }
+        }
+      }
+    }
+  }
+
+  .language-container {
+    .sub-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #f58545;
+    }
+
+    .language-details-container {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      .language-details {
+        width: 48%;
+        height: 100%;
+        .language-title {
+          color: #bbb;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          height: 100%;
+          .percentage {
+            font-size: 0.8rem;
+            text-align: end;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: end;
+          }
+        }
+        .language-progress {
+          width: 100%;
+          border: 1px solid #f58545;
+          height: 5px;
+          border-radius: 10px;
+          margin-top: 10px;
+
+          .language-percentage {
+            border-radius: 10px;
+            height: 5px;
+            padding: 0;
+            background-color: #f58545;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  @media only screen and (min-device-width: 200px) and (max-device-width: 700px) {
+    .about-container {
+      .desc-me-container {
+        flex-direction: column;
+        gap: 20px;
+        .desc-me {
+          width: 100%;
+          font-size: 1.2rem;
+        }
+        .details-container {
+          width: 100%;
+          .details-title {
+            font-size: 1.2rem;
+          }
+          .details-answer {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .skills-container {
+        .skill-details-container {
+          flex-direction: column;
+          gap: 20px;
+          .skill-details {
+            width: 100%;
+          }
+        }
+      }
+      .language-container {
+        .language-details-container {
+          flex-direction: column;
+          gap: 20px;
+          .language-details {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

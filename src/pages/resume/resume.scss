@@ -1,0 +1,70 @@
+.resume-container {
+  padding: 60px;
+  min-height: 100%;
+  position: relative;
+  box-sizing: border-box;
+
+  .title {
+    font-size: 1.9rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .step-container {
+    .step-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #f58545;
+      margin-bottom: 20px;
+    }
+
+    .ant-steps {
+      .ant-steps-item {
+        .ant-steps-item-container {
+          .ant-steps-item-tail::after {
+            background-color: #ffffff;
+          }
+          .ant-steps-item-icon {
+            .ant-steps-icon-dot {
+              background-color: #f58545;
+            }
+          }
+
+          .ant-steps-item-content {
+            color: #f58545;
+            font-weight: 600;
+            .ant-steps-item-title {
+              color: #ffffff;
+            }
+
+            .ant-steps-item-description {
+              color: #f58545;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .system-container {
+    margin-top: 40px;
+    .system-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #f58545;
+      margin-bottom: 20px;
+    }
+
+    .system {
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+      font-size: 1rem;
+      gap: 20px;
+      span {
+        color: #bbb;
+      }
+    }
+  }
+}
