@@ -163,6 +163,7 @@
 @media only screen and (orientation: portrait) {
   @media only screen and (min-device-width: 200px) and (max-device-width: 700px) {
     .about-container {
+      padding: 35px;
       .desc-me-container {
         flex-direction: column;
         gap: 20px;
